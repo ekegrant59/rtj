@@ -5,8 +5,8 @@ export const NAV_LINKS = [
   { href: "/contact", label: "Contact" },
 ] as const;
 
-// Add the real profile URLs and phone number when they are available.
+// Add the real social profile URLs when they are available.
 export const SOCIAL_LINKS: ReadonlyArray<{ href: string; label: string }> = [];
-export const CONTACT_PHONE: string | null = null;
+export const CONTACT_PHONE: string | null = "+1 (437) 733-5541";
 
-export const CONTACT_EMAIL = "hello@rtjagency.com";
+export const CONTACT_EMAIL = "rtjmarketingontario@gmail.com";
