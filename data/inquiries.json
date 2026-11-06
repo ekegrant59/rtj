@@ -1,0 +1,15 @@
+[
+  {
+    "name": "Jane Doe",
+    "email": "jane@example.com",
+    "company": "Acme Brand",
+    "services": [
+      "Design",
+      "Development"
+    ],
+    "message": "We would like to rebuild our brand and web application with RTJ.",
+    "id": "inq_1792693402826_wt06hb",
+    "createdAt": "2026-10-22T18:23:22.826Z",
+    "status": "new"
+  }
+]

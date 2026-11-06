@@ -1,0 +1,29 @@
+.button {
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  flex-shrink: 0;
+  min-height: 48px;
+  padding: 12px 24px;
+  border: 0;
+  border-radius: 0;
+  background-color: var(--bg-dark);
+  color: var(--text-light);
+  font-family: var(--font-ui-family);
+  font-optical-sizing: none;
+  font-size: 14px;
+  font-weight: 400;
+  line-height: 24px;
+  text-align: center;
+  white-space: nowrap;
+  transition: background-color 160ms ease, transform 160ms ease;
+}
+
+.button[data-tone="accent"] { background-color: var(--accent); color: #fff; }
+.button:disabled { opacity: 0.6; cursor: not-allowed; }
+.button:active:not(:disabled) { transform: translateY(1px); }
+
+@media (hover: hover) {
+  .button:hover:not(:disabled) { background-color: #262626; }
+  .button[data-tone="accent"]:hover:not(:disabled) { background-color: var(--accent-hover); }
+}

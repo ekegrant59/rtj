@@ -1,0 +1,150 @@
+.page {
+  --font-serif-family: var(--font-dm-serif), Georgia, serif;
+  --font-sans-family: var(--font-inter), Arial, sans-serif;
+  font-family: var(--font-sans-family);
+  font-optical-sizing: none;
+}
+
+
+.heroSection {
+  padding-top: 88px;
+  padding-bottom: 120px;
+}
+
+.heroEyebrow {
+  display: block;
+  font-size: 14px;
+  font-weight: 400;
+  letter-spacing: 0.12em;
+  line-height: 16px;
+  color: var(--text-secondary);
+  margin-bottom: 48px;
+}
+
+.heroTitle {
+  font-family: var(--font-serif-family);
+  font-size: clamp(48px, 8.334vw, 120px);
+  font-weight: 400;
+  line-height: 0.916667;
+  letter-spacing: -0.025em;
+  margin-bottom: 72px;
+}
+
+.heroTitleDot {
+  display: inline-block;
+  width: 0.167em;
+  height: 0.167em;
+  background-color: var(--accent);
+  margin-left: 12px;
+}
+
+.heroBottomRow {
+  display: flex;
+  justify-content: space-between;
+  align-items: flex-end;
+  gap: 32px;
+}
+
+.heroLead {
+  font-size: 18px;
+  line-height: 1.6;
+  color: #333333;
+  max-width: 480px;
+}
+
+.seeWorkLink {
+  display: inline-flex;
+  font-size: 14px;
+  border-bottom: 1px solid var(--text-primary);
+  padding-bottom: 4px;
+  white-space: nowrap;
+}
+
+.seeWorkLink:hover, .allProjectsLink:hover { color: var(--accent); }
+
+.workSection { padding-bottom: 68px; }
+
+.sectionHeaderRow {
+  display: flex;
+  justify-content: space-between;
+  align-items: baseline;
+  margin-bottom: 36px;
+}
+
+.sectionHeading {
+  font-family: var(--font-serif-family);
+  font-size: 36px;
+  font-weight: 400;
+  line-height: 1.222222;
+  letter-spacing: -0.025em;
+}
+
+.allProjectsLink {
+  font-size: 12px;
+  font-weight: 500;
+  letter-spacing: 0.18em;
+  white-space: nowrap;
+}
+
+.workGrid {
+  display: grid;
+  grid-template-columns: repeat(2, minmax(0, 1fr));
+  gap: 24px;
+}
+
+.whatWeDoSection { padding-bottom: 112px; }
+
+.whatWeDoHeader {
+  border-bottom: 1px solid var(--border-subtle);
+  padding-bottom: 20px;
+}
+
+.whatWeDoHeader :global(.eyebrow) {
+  display: block;
+  margin: 0;
+  line-height: 16px;
+  font-size: 12px;
+  font-weight: 400;
+  letter-spacing: 0.22em;
+}
+
+.disciplineRow {
+  display: grid;
+  grid-template-columns: 1.786fr 1fr;
+  align-items: center;
+  min-height: 173px;
+  border-bottom: 1px solid var(--border-subtle);
+  gap: 32px;
+}
+
+.disciplineTitle {
+  font-family: var(--font-serif-family);
+  font-size: clamp(36px, 4.167vw, 60px);
+  font-weight: 400;
+  line-height: 1.05;
+  letter-spacing: -0.033333em;
+}
+
+.disciplineDesc {
+  font-size: 18px;
+  line-height: 1.6;
+  color: #333333;
+}
+
+@media (max-width: 700px) {
+  .heroSection { padding-block: 64px 80px; }
+  .heroEyebrow { font-size: 9px; letter-spacing: 0.16em; margin-bottom: 32px; }
+  .heroTitle { font-size: clamp(44px, 8.8vw, 62px); line-height: 1.02; margin-bottom: 36px; }
+  .heroBottomRow { flex-direction: column; align-items: flex-start; gap: 24px; }
+  .heroLead, .disciplineDesc { font-size: 16px; }
+  .sectionHeaderRow { gap: 16px; margin-bottom: 28px; }
+  .sectionHeading { font-size: 28px; }
+  .allProjectsLink { font-size: 9px; }
+  .workGrid { grid-template-columns: 1fr; }
+  .disciplineRow { grid-template-columns: 1fr; gap: 20px; padding: 32px 0; min-height: 0; }
+  .whatWeDoSection { padding-bottom: 72px; }
+}
+
+@media (min-width: 1100px) {
+  .heroSection { height: 738px; padding-bottom: 0; }
+}

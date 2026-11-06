@@ -1,0 +1,56 @@
+.card {
+  width: 100%;
+  aspect-ratio: 5 / 4;
+  position: relative;
+  display: flex;
+  align-items: flex-end;
+  padding: 40px;
+  overflow: hidden;
+}
+
+.image {
+  object-fit: cover;
+  opacity: 0.5;
+  transition: transform 250ms ease;
+}
+
+.card:hover .image { transform: scale(1.025); }
+
+.projectLogo {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  width: 200px;
+  height: auto;
+}
+
+.content {
+  position: relative;
+  display: flex;
+  flex-direction: column;
+  gap: 12px;
+}
+
+.eyebrow {
+  font-family: var(--font-inter), Arial, sans-serif;
+  font-size: 10px;
+  font-weight: 700;
+  letter-spacing: 0.18em;
+  color: var(--accent);
+}
+
+.title {
+  font-family: var(--font-dm-serif), Georgia, serif;
+  font-size: clamp(26px, 2.5vw, 36px);
+  font-weight: 400;
+  line-height: 1.12;
+  letter-spacing: -0.025em;
+  color: #fff;
+}
+
+@media (max-width: 1200px) {
+  .card { padding: 24px; min-height: 320px; }
+  .projectLogo { width: 140px; top: 32%; }
+  .title { max-width: 460px; }
+}

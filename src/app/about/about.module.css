@@ -1,0 +1,61 @@
+.page { --font-serif-family: var(--font-newsreader), Georgia, serif; --page-gutter: clamp(20px, 3.334vw, 48px); }
+.heroSection { padding-top: 96px; padding-bottom: 96px; }
+.eyebrow { display: block; font-size: 11px; font-weight: 500; letter-spacing: 0.18em; text-transform: uppercase; color: var(--text-secondary); line-height: 14px; margin-bottom: 32px; }
+.heroTitle { font-family: var(--font-serif-family); font-size: clamp(54px, 7.223vw, 104px); font-weight: 700; line-height: 1; letter-spacing: -0.025em; margin-bottom: 50px; }
+.heroTitleDot { display: inline-block; width: 0.17em; height: 0.17em; background-color: var(--accent); margin-left: 5px; }
+.heroLead { font-size: 22px; line-height: 1.5; color: #262626; max-width: 680px; }
+.storySection { padding-bottom: 144px; }
+.storyGrid { display: grid; grid-template-columns: 416px minmax(0, 768px); gap: 48px; }
+.storyHeading { font-family: var(--font-sans-family); font-size: 32px; font-weight: 500; letter-spacing: 0.015em; line-height: 1.3; text-transform: uppercase; color: var(--accent); }
+.storyCopy { font-size: 19px; line-height: 31px; color: #262626; padding-top: 10px; }
+.storyCopy p + p { margin-top: 27px; }
+.expertiseSection { background-color: var(--bg-dark); color: var(--text-light); padding-block: 128px 129px; }
+.expertiseSection .eyebrow { color: #a3a3a3; margin-bottom: 36px; }
+.expertiseHeading { font-family: var(--font-serif-family); font-size: clamp(44px, 5.278vw, 76px); font-weight: 700; line-height: 1; letter-spacing: -0.025em; color: #fff; margin-bottom: 104px; }
+.expertiseGrid { display: grid; grid-template-columns: repeat(3, minmax(0, 1fr)); gap: 64px; max-width: 1264px; }
+.expertiseTitle { font-family: var(--font-serif-family); font-size: 36px; line-height: 1.1; letter-spacing: -0.043em; margin-bottom: 22.5px; position: relative; top: 5px; color: #fff; }
+.expertiseDescription { font-size: 16px; line-height: 1.6; color: #d4d4d4; max-width: 340px; }
+.metric { font-size: 11px; font-weight: 700; line-height: 1.5; letter-spacing: 0.14em; text-transform: uppercase; color: var(--accent); margin-top: 32px; }
+.processSection { padding-block: 128px 158.5px; }
+.processSection .eyebrow { margin-bottom: 51px; }
+.processGrid { display: grid; grid-template-columns: repeat(3, minmax(0, 1fr)); gap: 40px; max-width: 1264px; }
+.processImage { position: relative; aspect-ratio: 394.667 / 460; overflow: hidden; margin-bottom: 24px; }
+.processImage img { object-fit: cover; }
+.processImage[data-position="0"] img { object-position: center 50%; }
+.processImage[data-position="2"] img { object-position: center 10%; }
+.processTitle { font-family: var(--font-serif-family); font-size: 30px; line-height: 1.2; letter-spacing: -0.025em; margin-bottom: 12px; }
+.processDescription { font-size: 15px; line-height: 1.5; color: #404040; }
+.beliefsSection { padding-bottom: 128px; }
+.beliefsInner { border-top: 1px solid var(--border-subtle); padding-top: 64px; }
+.beliefsSection .eyebrow { margin-bottom: 48px; }
+.beliefsGrid { display: grid; grid-template-columns: repeat(3, minmax(0, 1fr)); gap: 64px; }
+.beliefTitle { font-family: var(--font-serif-family); font-size: 30px; line-height: 1.2; letter-spacing: -0.025em; margin-bottom: 20px; }
+.beliefDescription { font-size: 15px; line-height: 1.5; max-width: 340px; color: #404040; }
+
+@media (max-width: 1100px) {
+  .storyGrid { grid-template-columns: 1fr 2fr; gap: 40px; }
+  .expertiseGrid { gap: 32px; }
+  .expertiseTitle { font-size: 30px; }
+  .processGrid { gap: 24px; }
+}
+@media (max-width: 700px) {
+  .heroSection { padding-block: 64px; }
+  .heroTitle { font-size: clamp(44px, 8.8vw, 60px); line-height: 1.04; margin-bottom: 36px; }
+  .heroLead { font-size: 18px; }
+  .storyGrid { grid-template-columns: 1fr; gap: 24px; }
+  .storyHeading { font-size: 24px; }
+  .storyCopy { font-size: 17px; line-height: 1.55; padding-top: 0; }
+  .storySection { padding-bottom: 72px; }
+  .expertiseSection { padding-block: 72px; }
+  .expertiseHeading { font-size: 44px; margin-bottom: 56px; }
+  .expertiseGrid { grid-template-columns: 1fr; gap: 48px; }
+  .expertiseTitle { margin-bottom: 16px; }
+  .metric { margin-top: 20px; }
+  .processSection { padding-block: 72px 80px; }
+  .processGrid { grid-template-columns: 1fr; gap: 40px; }
+  .processImage { max-height: 560px; }
+  .beliefsGrid { grid-template-columns: 1fr; gap: 36px; }
+  .beliefsSection { padding-bottom: 72px; }
+  .beliefsInner { padding-top: 48px; }
+  .beliefTitle { margin-bottom: 16px; }
+}

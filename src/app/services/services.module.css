@@ -1,0 +1,49 @@
+.page { --font-serif-family: var(--font-newsreader), Georgia, serif; --page-gutter: clamp(20px, 6.667vw, 96px); }
+.heroSection { padding-top: 120px; }
+.heroSection :global(.container) { padding-bottom: 141px; }
+.heroEyebrow { display: block; font-size: 12px; line-height: 14px; font-weight: 500; letter-spacing: 0.2em; color: var(--text-secondary); margin-bottom: 28px; }
+.heroTitle {
+  font-family: var(--font-serif-family);
+  font-size: clamp(60px, 8.334vw, 120px);
+  font-weight: 700;
+  line-height: 1;
+  letter-spacing: -0.035em;
+  margin-bottom: 56px;
+  position: relative;
+  top: 15px;
+}
+.heroTitleDot { display: inline-block; width: 20px; height: 20px; background-color: var(--accent); margin-left: 5px; }
+.heroLead { font-size: 24px; line-height: 1.4; color: #404040; max-width: 620px; }
+.disciplineBlock { display: grid; grid-template-columns: repeat(2, minmax(0, 1fr)); padding: 96px 0; border-top: 1px solid var(--border-subtle); gap: 64px; }
+.disciplineBlock:first-child { padding-top: 120px; }
+.disciplineBlock:last-child { padding-bottom: 118px; border-bottom: 1px solid var(--border-subtle); }
+.leftCol { max-width: 448px; }
+.disciplineTitle { font-family: var(--font-serif-family); font-size: clamp(44px, 4.445vw, 64px); font-weight: 700; line-height: 1.1; letter-spacing: -0.025em; margin-bottom: 16px; position: relative; top: -5px; }
+.disciplineSummary { font-size: 20px; line-height: 1.4; color: #525252; }
+.deliverablesList { display: flex; flex-direction: column; }
+.deliverableItem { font-size: 18px; line-height: 28px; color: var(--text-primary); padding: 20px 0; border-bottom: 1px solid var(--border-subtle); }
+.processSection { padding-block: 64px 158px; }
+.processEyebrow { font-size: 12px; line-height: 14px; font-weight: 500; letter-spacing: 0.2em; color: var(--text-secondary); margin-bottom: 56px; display: block; }
+.processGrid { display: grid; grid-template-columns: repeat(4, minmax(0, 1fr)); gap: 32px; }
+.processNumber { font-family: var(--font-serif-family); font-size: 48px; font-weight: 700; color: var(--accent); line-height: 1; margin-bottom: 28px; position: relative; top: 12px; }
+.processTitle { font-size: 24px; font-weight: 700; line-height: 1.25; margin-bottom: 20px; }
+.processDesc { font-size: 16px; line-height: 1.6; color: #525252; max-width: 230px; }
+
+@media (max-width: 900px) {
+  .heroSection { padding-top: 72px; }
+  .heroSection :global(.container) { padding-bottom: 88px; }
+  .disciplineBlock { gap: 40px; }
+  .processGrid { grid-template-columns: repeat(2, minmax(0, 1fr)); gap: 48px; }
+}
+@media (max-width: 700px) {
+  .heroTitle { top: 0; font-size: clamp(54px, 10vw, 70px); margin-bottom: 32px; }
+  .heroTitleDot { width: 12px; height: 12px; }
+  .heroLead { font-size: 18px; }
+  .disciplineBlock, .disciplineBlock:first-child, .disciplineBlock:last-child { grid-template-columns: 1fr; padding-block: 56px; gap: 24px; }
+  .disciplineSummary { font-size: 17px; }
+  .deliverableItem { font-size: 16px; padding-block: 18px; }
+  .processSection { padding-block: 56px 80px; }
+  .processGrid { gap: 40px 24px; }
+  .processTitle { font-size: 20px; }
+  .processDesc { font-size: 14px; }
+}
